@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Swapping Example</title>
+</head>
+<body>
+    <h1>Variable Swapping</h1>
+
+    <script>
+        let a = parseInt(prompt("Enter the first value: "));
+        let b = parseInt(prompt("Enter the second value: "));
+        document.write("<h2>Before Swapping:</h2>");
+        document.write("<p>a = " + a + "</p>");
+        document.write("<p>b = " + b + "</p>");
+        a = a + b;  
+        b = a - b;  
+        a = a - b;  
+        document.write("<h2>After Swapping:</h2>");
+        document.write("<p>a = " + a + "</p>");
+        document.write("<p>b = " + b + "</p>");
+
+    </script>
+</body>
+</html>

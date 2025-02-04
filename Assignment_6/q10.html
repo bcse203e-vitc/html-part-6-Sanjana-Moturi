@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amstrong number</title>
+</head>
+<body>
+    <h2>Armstrong number</h2>
+    <script>
+       let num = parseInt(prompt("Enter a number:"));
+    let digits = num.toString().split('');
+    var result;
+    let sum = digits.reduce((acc, d) => acc + Math.pow(parseInt(d), digits.length), 0);
+    if(sum==num){
+        result="This is a Armstrong Number";
+    }
+    else{
+        result="This is not a Armstrong number";
+    }
+   document.write(result);
+    </script>
+    
+</body>
+</html>
