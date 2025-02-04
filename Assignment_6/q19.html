@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>longest word in sentance</title>
+    
+</head>
+<body>
+    
+    <script>
+        let n = prompt("Enter Sentence " );
+        let a = [];
+        a = n.split(" ");
+        let l = 0;
+        let b = -1;
+        a.forEach((element,i) => {
+            if(element.length > l ){
+                l = element.length;
+                b = i;
+            }
+        });
+
+        document.write(a[b]);
+
+        
+    </script>
+</body>
+</html>

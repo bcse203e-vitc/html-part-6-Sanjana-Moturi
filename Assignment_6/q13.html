@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second smallest and largest</title>
+    
+</head>
+<body>
+    <h3>Second smallest and largest number in array</h3>
+    <script>
+        let n = prompt("Enter Number " );
+        let a = Array.from(n.toString(),Number).map(Number)
+   
+        a.sort();
+        document.write("Second Smallest: " + a[1]);
+        document.write("<br>Second Largest: "+ a[ a .length -2 ]);
+        
+    </script>
+</body>
+</html>
